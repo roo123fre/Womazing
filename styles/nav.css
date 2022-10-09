@@ -1,64 +1,7 @@
-.nav {
-  padding: 35px 0;
-}
-.nav__inner {
-  display: flex;
-  justify-content: space-between;
-}
-.nav__list {
-  display: flex;
-}
-.nav__item {
-  margin-right: 45px;
-}
-.nav__item:last-child {
-  margin-right: 0px;
-}
-.nav__link {
-  font-size: 15px;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-  transition: color 0.5s linear;
-}
-.nav__link:hover {
-  color: #6e9c9f;
-}
-.nav__phone {
-  position: relative;
-  font-size: 15px;
-  line-height: 140%;
-  letter-spacing: 0.02em;
-  padding-left: 36px;
-}
 
-.nav__phone::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 17px;
-  height: 17px;
-  background-repeat: no-repeat;
-  background-image: url(../images/icons/call.svg);
-}
-
-.nav__cart {
-  position: relative;
-  font-size: 0px;
-}
-
-.nav__cart::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-  background-image: url(../images/icons/cart.svg);
-  background-repeat: no-repeat;
-}
-
+/* ----------------------- */
+/* -------Hero--------- */
+/* ------------------------ */
 .hero {
   margin-bottom: 130px;
 }
@@ -72,7 +15,6 @@
 .hero__title {
   max-width: 585px;
   width: 100%;
-  min-width: 585px;
   font-weight: 500;
   font-size: 55px;
   line-height: 110%;
@@ -128,6 +70,17 @@
   top: 125px;
   position: absolute;
   left: 315px;
+}
+@media screen and (max-width:992px) {
+  .hero__image-one{
+    display: none;
+  }
+  .hero__image-three{
+    display: none;
+  }
+  .hero__image__two{
+  width: 100vw;
+  }
 }
 /* ----------------------- */
 /* -------Collection--------- */
